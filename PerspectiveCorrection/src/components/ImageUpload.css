@@ -1,0 +1,28 @@
+.image-input{
+    width: 70.2vw;
+    height: 70.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75vw;
+    transition: transform 1s ease, background-position 10s;
+    border-radius: 5px;
+}
+
+.image-input:hover{
+    transform: scale(1.05);
+    
+    background-position: 70vw 0px, 0px 70vh, 0px 0px, 70vw 70vh;
+}
+
+.loading-border{
+    border-radius: 20px;
+}
+
+.marching-border{
+    background: linear-gradient(90deg, grey 50%, transparent 50%), linear-gradient(90deg, grey 50%, transparent 50%), linear-gradient(0deg, grey 50%, transparent 50%), linear-gradient(0deg, grey 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0px 0px, 70vw 70vh, 0px 70vh, 70vw 0px;
+
+}
